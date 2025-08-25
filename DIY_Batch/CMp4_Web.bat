@@ -25,5 +25,5 @@ if %errorlevel% equ 0 (
 ) else (
     echo Conversion failed.
 )
-
+powershell -c "(New-Object Media.SoundPlayer 'C:\Windows\Media\notify.wav').PlaySync();"
 pause
